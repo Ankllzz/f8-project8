@@ -1,0 +1,21 @@
+{
+    "name": "project-8",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "sass scss:assets/css -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ankllzz/f8-project8.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Ankllzz/f8-project8/issues"
+    },
+    "homepage": "https://github.com/Ankllzz/f8-project8#readme",
+    "description": ""
+}
