@@ -12,11 +12,13 @@ body {
     font-size: 1.6rem;
     font-family: Gordita, sans-serif;
     color: var(--text-color);
+    background: var(--body-bg);
 }
 
 a {
     color: inherit;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 button {
@@ -32,10 +34,12 @@ textarea {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 img {
     object-fit: cover;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .icon {

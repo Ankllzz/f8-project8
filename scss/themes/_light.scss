@@ -1,9 +1,27 @@
+@use "../abstracts";
+
 html {
     --text-color: #1a162e;
-    --icon-color: brightness(0) saturate(100%) invert(5%) sepia(25%)
-        saturate(5335%) hue-rotate(236deg) brightness(93%) contrast(91%);
+    --icon-color: brightness(0) saturate(100%) invert(5%) sepia(25%) saturate(5335%) hue-rotate(236deg) brightness(93%)
+        contrast(91%);
+    --body-bg: #f6f6f6;
     --header-color-bg: #eee;
+    --header-shadow: rgba(237, 237, 246, 0.2);
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-group-separate: #ededf6;
+
+    @include abstracts.breakpoint(lg) {
+        --header-color-bg: #fff;
+        --header-shadow-color: rgba(237, 237, 246, 0.2);
+    }
+
+    // Dropdown
+    --dropdown-bg-color: #fff;
+    --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
+    --top-menu-border-color: #d2d1d6;
+
+    // Sidebar
+    --sidebar-bg: #fff;
+    --sidebar-shadow-color: rgba(200, 200, 200, 0.4);
 }
