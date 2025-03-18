@@ -48,4 +48,11 @@ html {
     --filter-form-bg: #fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
     --tags-bg: #f8f8fb;
+
+    // Auth
+    --auth-content-bg: #fff;
+
+    @include abstracts.breakpoint(md) {
+        --auth-intro-bg: #fff;
+    }
 }

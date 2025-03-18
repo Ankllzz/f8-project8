@@ -50,4 +50,10 @@ html.dark {
     --tags-bg: #171c28;
     --filter-arrow-dark: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1173%) hue-rotate(183deg)
         brightness(100%) contrast(88%);
+
+    // Auth
+    --auth-content-bg: #292e39;
+    --auth-intro-bg: #171c28;
+    --auth-intro-text-color: #b9babe;
+    --auth-heading-color: #b9babe;
 }
