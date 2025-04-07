@@ -225,6 +225,14 @@
         padding: 13px;
     }
 
+    &__btn-wrap {
+        position: relative;
+
+        &:hover .act-dropdown {
+            display: block;
+        }
+    }
+
     &__btn {
         padding: 13px 20px;
         @extend %flexItemCenter;
@@ -274,5 +282,135 @@
     @include abstracts.breakpoint(sm) {
         padding: 0 20px;
         height: 44px;
+    }
+}
+
+.act-dropdown {
+    padding-top: 28px;
+    position: absolute;
+    top: 48px;
+    right: -60px;
+    width: min(600px, 100vw);
+    display: none;
+    // display: block;
+
+    // &.hide {
+    //     display: none;
+    // }
+
+    &__inner {
+        position: relative;
+        padding: 20px;
+        border-radius: 20px;
+        background: var(--header-act-dropdown-bg);
+        box-shadow: 0px 40px 90px 20px var(--header-act-dropdown-shadow);
+    }
+
+    &__arrow {
+        position: absolute;
+        top: -17px;
+        right: 90px;
+        height: 20.5px;
+        filter: var(--dropdown-arrow-color);
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 145.455%; /* 145.455% */
+    }
+
+    &__view-all {
+        color: #0071dc;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 145.455%; /* 145.455% */
+    }
+
+    &__list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    &__bottom {
+        margin: 20px 0;
+        padding: 20px 0;
+        border-width: 1px 0;
+        border-color: var(--header-act-dropdown-bottom-border);
+        border-style: solid;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__row + &__row {
+        margin-top: 10px;
+    }
+
+    &__row--bold {
+        font-weight: 500;
+    }
+
+    &__label,
+    &__value {
+        font-size: 1.6rem;
+        line-height: 145.455%;
+    }
+
+    &__separate {
+        margin: 20px 0;
+        height: 1px;
+        background: var(--header-act-dropdown-bottom-border);
+    }
+
+    &__checkout {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__checkout-btn {
+        min-width: 248px;
+    }
+}
+
+.cart-review-item {
+    text-align: left;
+
+    &__img-wrap {
+        position: relative;
+        padding-top: 100%;
+    }
+
+    &__thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__title {
+        margin-top: 10px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+    }
+
+    &__price {
+        margin-top: 6px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 146.667%;
     }
 }

@@ -16,6 +16,11 @@ html.dark {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }
 
+    // Header
+    --header-act-dropdown-bg: #2f3441;
+    --header-act-dropdown-shadow: rgba(23, 28, 40, 0.4);
+    --header-act-dropdown-bottom-border: #171c28;
+
     // Dropdown
     --dropdown-bg-color: #2f3441;
     --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
@@ -47,7 +52,7 @@ html.dark {
     // Filter form
     --filter-form-bg: #292e39;
     --filter-form-shadow: rgba(0, 0, 0, 0.4);
-    --tags-bg: #171c28;
+    --form-tag-bg: #171c28;
     --filter-arrow-dark: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1173%) hue-rotate(183deg)
         brightness(100%) contrast(88%);
 
@@ -56,4 +61,20 @@ html.dark {
     --auth-intro-bg: #171c28;
     --auth-intro-text-color: #b9babe;
     --auth-heading-color: #b9babe;
+
+    // Product
+    --product-detail-bg: #292e39;
+    --prod-info-bg: #171c28;
+    --prod-info-review-bg: #171c28;
+    --prod-info-tag-bg: #292e39;
+
+    // Breadcrumbs
+    --breadcrumb-bg: #171c28;
+    --breadcrumb-shadow: rgba(23, 28, 40, 0.2);
+
+    // Search bar
+    --search-bar-bg: #171c28;
+
+    // Review card
+    --review-card-bg: #171c28;
 }
